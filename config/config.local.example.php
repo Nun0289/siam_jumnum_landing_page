@@ -1,7 +1,7 @@
 <?php
 /**
- * Copy to config.local.php on the server (not overwritten by deploy).
+ * Production overrides (loaded before ADMIN_* constants are defined).
  * cPanel: nano ~/public_html/siamjumnum.charoencodegroup.com/config/config.local.php
  */
-define('ADMIN_USER', 'admin');
-define('ADMIN_PASS', 'CHANGE_ME_STRONG_PASSWORD');
+$adminUser = 'admin';
+$adminPass = 'CHANGE_ME_STRONG_PASSWORD';

@@ -14,8 +14,16 @@ define('DB_PATH', BASE_PATH . '/database/siam_jumnum.db');
 define('UPLOAD_PATH', BASE_PATH . '/uploads');
 define('UPLOAD_URL', '/uploads');
 
-define('ADMIN_USER', 'admin');
-define('ADMIN_PASS', 'admin123');
+$adminUser = 'admin';
+$adminPass = 'admin123';
+
+$localConfig = __DIR__ . '/config.local.php';
+if (is_file($localConfig)) {
+    require $localConfig;
+}
+
+define('ADMIN_USER', $adminUser);
+define('ADMIN_PASS', $adminPass);
 
 define('PHONE', '085 200 1010');
 define('EMAIL', 'info@siamjumnum.com');
@@ -25,11 +33,6 @@ define('HOURS_TH', 'วันอาทิตย์ - วันศุกร์ 10
 date_default_timezone_set('Asia/Bangkok');
 
 session_start();
-
-$localConfig = __DIR__ . '/config.local.php';
-if (is_file($localConfig)) {
-    require_once $localConfig;
-}
 
 require_once BASE_PATH . '/includes/i18n.php';
 initI18n();
