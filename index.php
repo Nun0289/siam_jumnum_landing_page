@@ -50,8 +50,6 @@ $promotions = getPromotions();
 
                     <div class="hero-slide__line"></div>
 
-                    <p class="hero-slide__eyebrow"><?= e(__('hero.eyebrow')) ?></p>
-
                     <h1 class="hero-slide__title"><?= e($banner['title']) ?></h1>
 
                     <?php if ($banner['subtitle']): ?>
@@ -78,15 +76,11 @@ $promotions = getPromotions();
 
         <div class="hero-controls">
 
-            <div class="hero-counter"><span class="hero-counter__current">01</span> / <span class="hero-counter__total"><?= str_pad(count($banners), 2, '0', STR_PAD_LEFT) ?></span></div>
+            <div class="hero-controls__center">
 
-            <div class="hero-pagination"></div>
+                <div class="hero-counter"><span class="hero-counter__current">01</span> / <span class="hero-counter__total"><?= str_pad(count($banners), 2, '0', STR_PAD_LEFT) ?></span></div>
 
-            <div class="hero-arrows">
-
-                <button class="hero-prev" aria-label="<?= e(__('aria.prev')) ?>"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M15 18l-6-6 6-6"/></svg></button>
-
-                <button class="hero-next" aria-label="<?= e(__('aria.next')) ?>"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M9 18l6-6-6-6"/></svg></button>
+                <div class="hero-pagination"></div>
 
             </div>
 
@@ -116,8 +110,6 @@ $promotions = getPromotions();
 
             <div class="collection-item__bg"></div>
 
-            <span class="collection-item__label"><?= e(__('collection.label')) ?></span>
-
             <span class="collection-item__title"><?= __html('collection.diamond') ?></span>
 
             <span class="collection-item__link"><?= e(__('collection.explore')) ?></span>
@@ -128,8 +120,6 @@ $promotions = getPromotions();
 
             <div class="collection-item__bg"></div>
 
-            <span class="collection-item__label"><?= e(__('collection.label')) ?></span>
-
             <span class="collection-item__title"><?= __html('collection.watch') ?></span>
 
             <span class="collection-item__link"><?= e(__('collection.explore')) ?></span>
@@ -139,8 +129,6 @@ $promotions = getPromotions();
         <a href="#products" class="collection-item" data-category="bag" style="--col-bg: url('<?= e(themeImageUrl('/assets/images/bg-bag.png')) ?>')">
 
             <div class="collection-item__bg"></div>
-
-            <span class="collection-item__label"><?= e(__('collection.label')) ?></span>
 
             <span class="collection-item__title"><?= __html('collection.bag') ?></span>
 
@@ -173,8 +161,6 @@ $promotions = getPromotions();
         <div class="intro__text reveal">
 
             <div class="intro__text-inner">
-
-                <span class="section-eyebrow"><?= e(__('intro.eyebrow')) ?></span>
 
                 <h2 class="section-title intro__title"><?= __html('intro.title') ?></h2>
 
@@ -314,8 +300,6 @@ $promotions = getPromotions();
 
     <div class="section-header section-header--left container reveal">
 
-        <span class="section-eyebrow"><?= e(__('services.eyebrow')) ?></span>
-
         <h2 class="section-title"><?= __html('services.title') ?></h2>
 
     </div>
@@ -324,9 +308,9 @@ $promotions = getPromotions();
 
         <?php
         $serviceCards = [
-            ['num' => '01', 'cat' => 'Joaillerie', 'img' => 'bg-diamond.png', 'title' => 'services.diamond.title', 'desc' => 'services.diamond.desc', 'filter' => 'diamond', 'key' => 'diamond', 'reverse' => false],
-            ['num' => '02', 'cat' => 'Horlogerie', 'img' => 'bg-watch.png', 'title' => 'services.watch.title', 'desc' => 'services.watch.desc', 'filter' => 'watch', 'key' => 'watch', 'reverse' => true],
-            ['num' => '03', 'cat' => 'Maroquinerie', 'img' => 'bg-bag.png', 'title' => 'services.bag.title', 'desc' => 'services.bag.desc', 'filter' => 'bag', 'key' => 'bag', 'reverse' => false],
+            ['cat' => 'Joaillerie', 'img' => 'bg-diamond.png', 'title' => 'services.diamond.title', 'desc' => 'services.diamond.desc', 'filter' => 'diamond', 'key' => 'diamond', 'reverse' => false],
+            ['cat' => 'Horlogerie', 'img' => 'bg-watch.png', 'title' => 'services.watch.title', 'desc' => 'services.watch.desc', 'filter' => 'watch', 'key' => 'watch', 'reverse' => true],
+            ['cat' => 'Maroquinerie', 'img' => 'bg-bag.png', 'title' => 'services.bag.title', 'desc' => 'services.bag.desc', 'filter' => 'bag', 'key' => 'bag', 'reverse' => false],
         ];
         foreach ($serviceCards as $card):
         ?>
@@ -334,21 +318,13 @@ $promotions = getPromotions();
 
             <div class="editorial-card__visual">
 
-                <span class="editorial-card__num" aria-hidden="true"><?= e($card['num']) ?></span>
-
                 <div class="editorial-card__image" style="background-image: url('<?= e(themeImageUrl('/assets/images/' . $card['img'])) ?>')"></div>
 
                 <div class="editorial-card__shade"></div>
 
-                <div class="editorial-card__frame" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-
-                <span class="editorial-card__label"><?= e($card['cat']) ?></span>
-
             </div>
 
             <div class="editorial-card__content">
-
-                <span class="editorial-card__cat"><?= e($card['cat']) ?></span>
 
                 <h3><?= e(__($card['title'])) ?></h3>
 
@@ -390,19 +366,15 @@ $promotions = getPromotions();
 
     <div class="container showcase__content reveal">
 
-        <div class="showcase__eyebrow-wrap">
+        <h2 class="showcase__title">
+            <span class="showcase__title-line"><?= e(__('showcase.title1')) ?></span>
+            <span class="showcase__title-line"><?= e(__('showcase.title2')) ?></span>
+        </h2>
 
-            <span class="showcase__line" aria-hidden="true"></span>
-
-            <span class="section-eyebrow section-eyebrow--light"><?= e(__('showcase.eyebrow')) ?></span>
-
-            <span class="showcase__line" aria-hidden="true"></span>
-
-        </div>
-
-        <h2 class="showcase__title"><?= __html('showcase.title') ?></h2>
-
-        <p class="showcase__text"><?= __html('showcase.text') ?></p>
+        <p class="showcase__text">
+            <span class="showcase__text-line"><?= e(__('showcase.text1')) ?></span>
+            <span class="showcase__text-line"><?= e(__('showcase.text2')) ?></span>
+        </p>
 
         <div class="showcase__stats">
 
@@ -452,13 +424,7 @@ $promotions = getPromotions();
 
         <div class="products__header reveal">
 
-            <div>
-
-                <span class="section-eyebrow"><?= e(__('products.eyebrow')) ?></span>
-
-                <h2 class="section-title"><?= __html('products.title') ?></h2>
-
-            </div>
+            <h2 class="section-title"><?= __html('products.title') ?></h2>
 
             <div class="product-filters">
 
@@ -534,9 +500,9 @@ $promotions = getPromotions();
 
         <div class="product-nav">
 
-                <button class="product-prev" aria-label="<?= e(__('aria.prev')) ?>"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M15 18l-6-6 6-6"/></svg></button>
+                <button class="product-prev" aria-label="<?= e(__('aria.prev')) ?>"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
 
-                <button class="product-next" aria-label="<?= e(__('aria.next')) ?>"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M9 18l6-6-6-6"/></svg></button>
+                <button class="product-next" aria-label="<?= e(__('aria.next')) ?>"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
 
             </div>
 
@@ -553,8 +519,6 @@ $promotions = getPromotions();
     <div class="container">
 
         <div class="section-header reveal">
-
-            <span class="section-eyebrow"><?= e(__('products.grid_eyebrow')) ?></span>
 
             <h2 class="section-title"><?= e(__('products.grid_title')) ?></h2>
 
@@ -613,8 +577,6 @@ $promotions = getPromotions();
     <div class="container">
 
         <div class="section-header reveal">
-
-            <span class="section-eyebrow"><?= e(__('steps.eyebrow')) ?></span>
 
             <h2 class="section-title"><?= e(__('steps.title')) ?></h2>
 
@@ -692,8 +654,6 @@ $promotions = getPromotions();
 
                 <div class="valuation__text">
 
-                    <span class="section-eyebrow"><?= e(__('valuation.eyebrow')) ?></span>
-
                     <h2 class="section-title"><?= __html('valuation.title') ?></h2>
 
                     <p><?= e(__('valuation.desc')) ?></p>
@@ -767,8 +727,6 @@ $promotions = getPromotions();
     <div class="container">
 
         <div class="section-header reveal">
-
-            <span class="section-eyebrow"><?= e(__('promo.eyebrow')) ?></span>
 
             <h2 class="section-title"><?= e(__('promo.title')) ?></h2>
 

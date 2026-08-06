@@ -48,7 +48,6 @@ function initHeroSwiper() {
         effect: 'fade',
         fadeEffect: { crossFade: true },
         pagination: { el: '.hero-pagination', clickable: true },
-        navigation: { nextEl: '.hero-next', prevEl: '.hero-prev' },
         speed: 1400,
         on: {
             slideChange(s) {

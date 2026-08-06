@@ -26,7 +26,7 @@ return [
     'collection.diamond' => 'เพชร & อัญมณี',
     'collection.watch' => 'นาฬิกา<br>แบรนด์เนม',
     'collection.bag' => 'กระเป๋า<br>แบรนด์เนม',
-    'collection.explore' => 'สำรวจ →',
+    'collection.explore' => 'ดูเพิ่มเติม →',
 
     'intro.eyebrow' => 'Notre Maison',
     'intro.title' => 'ศูนย์รับจำนำ<br>เพชรเม็ดใหญ่<br>และสินค้าแบรนด์เนม<br>ครบวงจร',
@@ -70,8 +70,10 @@ return [
     'services.bag.f3' => 'เก็บรักษาปลอดภัย',
 
     'showcase.eyebrow' => 'Our Boutique',
-    'showcase.title' => 'ประสบการณ์ระดับพรีเมียม<br>ในทุกขั้นตอน',
-    'showcase.text' => 'สยามจำนำ พร้อมดูแลสินค้าสุดรักของคุณอย่างมืออาชีพ<br>เป็นกระเป๋าแบรนด์เนม นาฬิกา หรือเพชร ให้วงเงินสูง รับเงินสดทันที',
+    'showcase.title1' => 'ประสบการณ์ระดับพรีเมียม',
+    'showcase.title2' => 'ในทุกขั้นตอน',
+    'showcase.text1' => 'สยามจำนำ พร้อมดูแลสินค้าสุดรักของคุณอย่างมืออาชีพ',
+    'showcase.text2' => 'เป็นกระเป๋าแบรนด์เนม นาฬิกา หรือเพชร ให้วงเงินสูง รับเงินสดทันที',
     'showcase.cta' => 'นัดหมายวันเยี่ยมชม',
     'showcase.stat1.val' => '15+',
     'showcase.stat1.label' => 'ปีประสบการณ์',

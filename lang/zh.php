@@ -70,8 +70,10 @@ return [
     'services.bag.f3' => '安全保管',
 
     'showcase.eyebrow' => 'Our Boutique',
-    'showcase.title' => '尊享体验<br>贯穿每一步',
-    'showcase.text' => '暹罗典当专业呵护您的珍藏 — 名牌包、腕表或钻石 — 高额估价，即时现金。',
+    'showcase.title1' => '尊享体验',
+    'showcase.title2' => '贯穿每一步',
+    'showcase.text1' => '暹罗典当专业呵护您的珍藏。',
+    'showcase.text2' => '名牌包、腕表或钻石 — 高额估价，即时现金。',
     'showcase.cta' => '预约到访',
     'showcase.stat1.val' => '15+',
     'showcase.stat1.label' => '年专业经验',

@@ -46,9 +46,9 @@ body.theme-noir .header.header--noir {
 
 body.theme-noir .header__bar--noir {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    gap: 16px;
+    gap: clamp(16px, 2.5vw, 32px);
     height: auto;
     min-height: var(--header-height);
     padding: 16px clamp(20px, 4vw, 48px) 14px;
@@ -56,16 +56,11 @@ body.theme-noir .header__bar--noir {
     border-bottom: 1px solid rgba(212, 175, 55, 0.4);
 }
 
-body.theme-noir .nav--noir-left { justify-content: flex-end; }
-body.theme-noir .nav--noir-right {
-    justify-content: flex-start;
-    align-items: center;
-}
-
-body.theme-noir .nav--noir-left,
-body.theme-noir .nav--noir-right {
+body.theme-noir .nav--noir {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: clamp(16px, 2.5vw, 32px);
 }
 
@@ -81,14 +76,24 @@ body.theme-noir .nav__link:hover { color: var(--gold); opacity: 1; }
 body.theme-noir .logo--noir {
     position: relative;
     z-index: 2;
-    padding: 0 8px;
-    grid-column: 2;
-    justify-self: center;
+    padding: 0;
+    justify-self: start;
+}
+
+body.theme-noir .logo--noir.logo--left {
+    align-items: flex-start;
+    text-align: left;
 }
 
 body.theme-noir .logo--noir .logo__img {
     max-height: 42px;
     display: block;
+}
+
+body.theme-noir .header__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 body.theme-noir .header.scrolled {
@@ -99,7 +104,7 @@ body.theme-noir .header.scrolled {
 body.theme-noir .nav-toggle span { background: var(--gold); }
 
 body.theme-noir .header--noir .lang-switcher {
-    margin-left: 4px;
+    margin-left: 0;
     flex-shrink: 0;
     position: relative;
     z-index: 2;
@@ -593,8 +598,8 @@ body.theme-noir .mobile-nav__link {
 
 @media (max-width: 900px) {
     body.theme-noir .header__bar--noir { grid-template-columns: 1fr auto; }
-    body.theme-noir .nav--noir-left,
-    body.theme-noir .nav--noir-right { display: none; }
+    body.theme-noir .nav--noir,
+    body.theme-noir .header__actions { display: none; }
     body.theme-noir .nav-toggle { display: flex; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); }
     body.theme-noir .logo--noir { grid-column: 1; justify-self: center; }
     body.theme-noir .services__editorial { grid-template-columns: 1fr; }

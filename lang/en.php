@@ -70,8 +70,10 @@ return [
     'services.bag.f3' => 'Secure Storage',
 
     'showcase.eyebrow' => 'Our Boutique',
-    'showcase.title' => 'A Premium Experience<br>Every Step of the Way',
-    'showcase.text' => 'Siam Jumnum professionally cares for your treasured items — designer bags, watches, or diamonds — with top offers and instant cash.',
+    'showcase.title1' => 'A Premium Experience',
+    'showcase.title2' => 'Every Step of the Way',
+    'showcase.text1' => 'Siam Jumnum professionally cares for your treasured items.',
+    'showcase.text2' => 'Designer bags, watches, or diamonds — top offers and instant cash.',
     'showcase.cta' => 'Book a Visit',
     'showcase.stat1.val' => '15+',
     'showcase.stat1.label' => 'Years Experience',

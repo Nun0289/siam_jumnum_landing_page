@@ -101,6 +101,39 @@ body.theme-classic .hero-slide__title {
 body.theme-classic .hero-slide__subtitle {
     font-weight: 500;
     opacity: 0.92;
+    letter-spacing: 0.01em;
+}
+
+@media (max-width: 480px) {
+    .hero-slide__subtitle {
+        font-size: clamp(0.6875rem, 2.8vw, 0.8125rem);
+        letter-spacing: -0.01em;
+    }
+}
+
+body.theme-classic .hero-controls {
+    bottom: clamp(40px, 6vh, 64px);
+}
+
+body.theme-classic .hero-counter {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+body.theme-classic .hero-counter__current {
+    font-weight: 700;
+}
+
+body.theme-classic .hero-pagination .swiper-pagination-bullet {
+    width: 44px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+body.theme-classic .hero-pagination .swiper-pagination-bullet-active {
+    background: var(--white);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.35);
 }
 
 body.theme-classic .hero-slide--store .hero-slide__content {
@@ -147,18 +180,22 @@ body.theme-classic .showcase__title {
     font-weight: 500;
 }
 
+body.theme-classic .showcase__title-line {
+    white-space: nowrap;
+}
+
 body.theme-classic .showcase__text {
     font-weight: 500;
-    line-height: 1.85;
+    line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+    .showcase__title-line {
+        white-space: normal;
+    }
 }
 
 /* ===== PRODUCTS: หัวข้อชิดซ้าย ===== */
-body.theme-classic .products__header {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-}
-
 body.theme-classic .products__header .section-title::after {
     margin-left: 0;
     margin-right: auto;
