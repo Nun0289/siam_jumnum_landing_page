@@ -29,7 +29,7 @@ return [
     'collection.explore' => 'Explore →',
 
     'intro.eyebrow' => 'Notre Maison',
-    'intro.title' => 'Premium Pawnbroker for<br>Large Diamonds & Luxury Brands',
+    'intro.title' => 'Premium Pawnbroker<br>for Large Diamonds<br>& Luxury Brands',
     'intro.lead' => 'Large diamond pawn at top market rates · Certified diamonds GIA, HRD, IGI · Luxury watches Patek Philippe, Rolex, Richard Mille, Panerai · Designer bags Hermès, Chanel, Louis Vuitton, Gucci, Balenciaga, Dior',
     'intro.cta' => 'Request a Free Quote',
 
@@ -102,7 +102,7 @@ return [
     'steps.3.desc' => 'Agree on price and receive cash instantly — items stored securely',
 
     'valuation.eyebrow' => 'Get a Quote',
-    'valuation.title' => 'Send Photos<br>for a Free Appraisal',
+    'valuation.title' => 'Send Photos for<br>a Free Appraisal',
     'valuation.desc' => 'Get a preliminary quote first — instant cash, top offers, friendly service at Siam Jumnum.',
     'valuation.name' => 'Full Name',
     'valuation.name_ph' => 'Enter your name',

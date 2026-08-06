@@ -46,7 +46,7 @@ $compareRows = [
 
         <section class="designs-hero">
             <span class="designs-hero__eyebrow"><?= e(__('designs.hero_eyebrow')) ?></span>
-            <h1 class="designs-hero__title"><?= __('designs.hero_title') ?></h1>
+            <h1 class="designs-hero__title"><?= __html('designs.hero_title') ?></h1>
             <p class="designs-hero__desc"><?= e(__('designs.hero_desc')) ?></p>
         </section>
 

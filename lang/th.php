@@ -24,12 +24,12 @@ return [
 
     'collection.label' => 'Collection',
     'collection.diamond' => 'เพชร & อัญมณี',
-    'collection.watch' => 'นาฬิกาแบรนด์เนม',
-    'collection.bag' => 'กระเป๋าแบรนด์เนม',
+    'collection.watch' => 'นาฬิกา<br>แบรนด์เนม',
+    'collection.bag' => 'กระเป๋า<br>แบรนด์เนม',
     'collection.explore' => 'สำรวจ →',
 
     'intro.eyebrow' => 'Notre Maison',
-    'intro.title' => 'ศูนย์รับจำนำเพชรเม็ดใหญ่<br>และสินค้าแบรนด์เนม ครบวงจร',
+    'intro.title' => 'ศูนย์รับจำนำเพชรเม็ดใหญ่<br>และสินค้าแบรนด์เนม<br>ครบวงจร',
     'intro.lead' => 'รับจำนำเพชรเม็ดใหญ่ ให้ราคาสูงสุด · รับจำนำเพชรใบเซอร์ GIA, HRD, IGI · รับจำนำนาฬิกาแบรนด์เนม Patek Philippe, Rolex, Richard Mille, Panerai · รับจำนำกระเป๋าแบรนด์เนม Hermès, Chanel, Louis Vuitton, Gucci, Balenciaga, Dior',
     'intro.cta' => 'ประเมินราคาเบื้องต้น',
 
@@ -102,7 +102,7 @@ return [
     'steps.3.desc' => 'ตกลงราคาแล้วรับเงินสดทันที สินค้าเก็บรักษาอย่างปลอดภัย',
 
     'valuation.eyebrow' => 'ประเมินราคา',
-    'valuation.title' => 'ส่งรูปสินค้ามา<br>ประเมินราคาเบื้องต้นได้เลย',
+    'valuation.title' => 'ส่งรูปสินค้ามา<br>ประเมินราคาเบื้องต้น<br>ได้เลย',
     'valuation.desc' => 'ให้เราประเมินราคาเบื้องต้นก่อนได้ค่ะ รับเงินสดทันที ให้ราคาสูง สยามจำนำใจดีเป็นกันเอง',
     'valuation.name' => 'ชื่อ-นามสกุล',
     'valuation.name_ph' => 'กรอกชื่อของคุณ',

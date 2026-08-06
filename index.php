@@ -118,7 +118,7 @@ $promotions = getPromotions();
 
             <span class="collection-item__label"><?= e(__('collection.label')) ?></span>
 
-            <span class="collection-item__title"><?= e(__('collection.diamond')) ?></span>
+            <span class="collection-item__title"><?= __html('collection.diamond') ?></span>
 
             <span class="collection-item__link"><?= e(__('collection.explore')) ?></span>
 
@@ -130,7 +130,7 @@ $promotions = getPromotions();
 
             <span class="collection-item__label"><?= e(__('collection.label')) ?></span>
 
-            <span class="collection-item__title"><?= e(__('collection.watch')) ?></span>
+            <span class="collection-item__title"><?= __html('collection.watch') ?></span>
 
             <span class="collection-item__link"><?= e(__('collection.explore')) ?></span>
 
@@ -142,7 +142,7 @@ $promotions = getPromotions();
 
             <span class="collection-item__label"><?= e(__('collection.label')) ?></span>
 
-            <span class="collection-item__title"><?= e(__('collection.bag')) ?></span>
+            <span class="collection-item__title"><?= __html('collection.bag') ?></span>
 
             <span class="collection-item__link"><?= e(__('collection.explore')) ?></span>
 
@@ -176,7 +176,7 @@ $promotions = getPromotions();
 
                 <span class="section-eyebrow"><?= e(__('intro.eyebrow')) ?></span>
 
-                <h2 class="section-title intro__title"><?= __('intro.title') ?></h2>
+                <h2 class="section-title intro__title"><?= __html('intro.title') ?></h2>
 
                 <p class="intro__lead"><?= e(__('intro.lead')) ?></p>
 
@@ -298,7 +298,7 @@ $promotions = getPromotions();
 
         <div class="quote-section__ornament">✦</div>
 
-        <blockquote class="quote-section__text"><?= __('quote.text') ?></blockquote>
+        <blockquote class="quote-section__text"><?= __html('quote.text') ?></blockquote>
 
         <cite class="quote-section__cite"><?= e(__('quote.cite')) ?></cite>
 
@@ -316,7 +316,7 @@ $promotions = getPromotions();
 
         <span class="section-eyebrow"><?= e(__('services.eyebrow')) ?></span>
 
-        <h2 class="section-title"><?= __('services.title') ?></h2>
+        <h2 class="section-title"><?= __html('services.title') ?></h2>
 
     </div>
 
@@ -400,7 +400,7 @@ $promotions = getPromotions();
 
         </div>
 
-        <h2 class="showcase__title"><?= __('showcase.title') ?></h2>
+        <h2 class="showcase__title"><?= __html('showcase.title') ?></h2>
 
         <p class="showcase__text"><?= e(__('showcase.text')) ?></p>
 
@@ -456,7 +456,7 @@ $promotions = getPromotions();
 
                 <span class="section-eyebrow"><?= e(__('products.eyebrow')) ?></span>
 
-                <h2 class="section-title"><?= __('products.title') ?></h2>
+                <h2 class="section-title"><?= __html('products.title') ?></h2>
 
             </div>
 
@@ -602,7 +602,7 @@ $promotions = getPromotions();
 
             <span class="section-eyebrow"><?= e(__('steps.eyebrow')) ?></span>
 
-            <h2 class="section-title"><?= __('steps.title') ?></h2>
+            <h2 class="section-title"><?= __html('steps.title') ?></h2>
 
         </div>
 
@@ -676,7 +676,7 @@ $promotions = getPromotions();
 
                 <span class="section-eyebrow"><?= e(__('valuation.eyebrow')) ?></span>
 
-                <h2 class="section-title"><?= __('valuation.title') ?></h2>
+                <h2 class="section-title"><?= __html('valuation.title') ?></h2>
 
                 <p><?= e(__('valuation.desc')) ?></p>
 

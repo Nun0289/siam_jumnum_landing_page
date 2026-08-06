@@ -53,6 +53,14 @@ function __(string $key): string
     return $GLOBALS['translations'][$key] ?? $key;
 }
 
+function __html(string $key): string
+{
+    $text = __($key);
+    $text = preg_replace('/<br\s*\/?>/i', '[[BR]]', $text);
+    $text = htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
+    return str_replace('[[BR]]', '<br>', $text);
+}
+
 function __p(string $key, array $vars = []): string
 {
     $text = __($key);

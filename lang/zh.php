@@ -29,7 +29,7 @@ return [
     'collection.explore' => '探索 →',
 
     'intro.eyebrow' => 'Notre Maison',
-    'intro.title' => '大钻与名牌<br>综合典当中心',
+    'intro.title' => '大钻与名牌<br>综合典当<br>中心',
     'intro.lead' => '大钻高价典当 · GIA、HRD、IGI 证书钻石 · 名表 Patek Philippe、Rolex、Richard Mille、Panerai · 名牌包 Hermès、Chanel、Louis Vuitton、Gucci、Balenciaga、Dior',
     'intro.cta' => '初步估价',
 
