@@ -1,8 +1,10 @@
     <header class="header header--hero header--classic" id="header">
 
-        <div class="header__bar">
+        <div class="header__bar header__bar--classic">
 
-            <nav class="nav nav--left" id="navLeft">
+            <?php $logoModifier = 'logo--left'; require __DIR__ . '/../partials/logo.php'; ?>
+
+            <nav class="nav nav--classic" id="navClassic">
 
                 <a href="#home" class="nav__link"><?= e(__('nav.home')) ?></a>
 
@@ -10,26 +12,23 @@
 
                 <a href="#products" class="nav__link"><?= e(__('nav.products')) ?></a>
 
-            </nav>
-
-            <?php require __DIR__ . '/../partials/logo.php'; ?>
-
-            <nav class="nav nav--right" id="navRight">
-
                 <a href="#about" class="nav__link"><?= e(__('nav.about')) ?></a>
 
                 <a href="#promotions" class="nav__link"><?= e(__('nav.promotions')) ?></a>
 
                 <a href="#contact" class="nav__link"><?= e(__('nav.contact')) ?></a>
 
+            </nav>
+
+            <div class="header__actions">
+
                 <?php require __DIR__ . '/../partials/lang-switcher.php'; ?>
 
-            </nav>
+            </div>
 
             <button class="nav-toggle" id="navToggle" aria-label="<?= e(__('aria.menu')) ?>"><span></span><span></span></button>
 
         </div>
 
     </header>
-
 

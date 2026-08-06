@@ -402,7 +402,7 @@ $promotions = getPromotions();
 
         <h2 class="showcase__title"><?= __html('showcase.title') ?></h2>
 
-        <p class="showcase__text"><?= e(__('showcase.text')) ?></p>
+        <p class="showcase__text"><?= __html('showcase.text') ?></p>
 
         <div class="showcase__stats">
 
@@ -616,7 +616,7 @@ $promotions = getPromotions();
 
             <span class="section-eyebrow"><?= e(__('steps.eyebrow')) ?></span>
 
-            <h2 class="section-title"><?= __html('steps.title') ?></h2>
+            <h2 class="section-title"><?= e(__('steps.title')) ?></h2>
 
         </div>
 
