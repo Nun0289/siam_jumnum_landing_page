@@ -168,6 +168,37 @@ function uploadImage(array $file, string $prefix = 'img'): ?string {
     return null;
 }
 
+function themeImageUrl(string $path): string {
+    if (!function_exists('currentThemeId')) {
+        require_once __DIR__ . '/themes.php';
+    }
+
+    $path = '/' . ltrim($path, '/');
+    $theme = currentThemeId();
+    $dir = dirname($path);
+    $name = pathinfo($path, PATHINFO_FILENAME);
+    $ext = pathinfo($path, PATHINFO_EXTENSION) ?: 'png';
+
+    foreach (['classic', 'blanc', 'noir'] as $suffix) {
+        if (str_ends_with($name, '-' . $suffix)) {
+            $name = substr($name, 0, -strlen('-' . $suffix));
+            break;
+        }
+    }
+
+    $themedPath = $dir . '/' . $name . '-' . $theme . '.' . $ext;
+    if (file_exists(BASE_PATH . $themedPath)) {
+        return assetUrl($themedPath);
+    }
+
+    $basePath = $dir . '/' . $name . '.' . $ext;
+    if (file_exists(BASE_PATH . $basePath)) {
+        return assetUrl($basePath);
+    }
+
+    return assetUrl($path);
+}
+
 function imageUrl(string $url, string $category = ''): string {
     $fallbacks = [
         'diamond' => '/assets/images/bg-diamond.png',
@@ -177,11 +208,11 @@ function imageUrl(string $url, string $category = ''): string {
 
     if (str_starts_with($url, '/assets/') || str_starts_with($url, 'assets/')) {
         $path = '/' . ltrim($url, '/');
-        if (file_exists(BASE_PATH . $path)) {
-            return assetUrl($path);
+        if (file_exists(BASE_PATH . $path) || $category) {
+            return themeImageUrl($path);
         }
         if ($category && isset($fallbacks[$category])) {
-            return assetUrl($fallbacks[$category]);
+            return themeImageUrl($fallbacks[$category]);
         }
     }
 
@@ -191,7 +222,7 @@ function imageUrl(string $url, string $category = ''): string {
 
     $path = str_starts_with($url, '/') ? $url : '/' . ltrim($url, '/');
     if ($category && isset($fallbacks[$category]) && !file_exists(BASE_PATH . $path)) {
-        return assetUrl($fallbacks[$category]);
+        return themeImageUrl($fallbacks[$category]);
     }
 
     return $path;

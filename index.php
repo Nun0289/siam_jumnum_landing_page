@@ -31,7 +31,7 @@ $promotions = getPromotions();
             <?php
                 $isStoreBanner = ($banner['banner_style'] ?? '') === 'store';
                 $bannerImg = str_starts_with($banner['image_url'], '/assets/')
-                    ? assetUrl($banner['image_url'])
+                    ? themeImageUrl($banner['image_url'])
                     : imageUrl($banner['image_url']);
             ?>
             <div class="swiper-slide hero-slide<?= $isStoreBanner ? ' hero-slide--store' : '' ?>">
@@ -112,7 +112,7 @@ $promotions = getPromotions();
 
     <div class="collections-strip__inner">
 
-        <a href="#products" class="collection-item" data-category="diamond" style="--col-bg: url('<?= e(assetUrl('/assets/images/bg-diamond.png')) ?>')">
+        <a href="#products" class="collection-item" data-category="diamond" style="--col-bg: url('<?= e(themeImageUrl('/assets/images/bg-diamond.png')) ?>')">
 
             <div class="collection-item__bg"></div>
 
@@ -124,7 +124,7 @@ $promotions = getPromotions();
 
         </a>
 
-        <a href="#products" class="collection-item" data-category="watch" style="--col-bg: url('<?= e(assetUrl('/assets/images/bg-watch.png')) ?>')">
+        <a href="#products" class="collection-item" data-category="watch" style="--col-bg: url('<?= e(themeImageUrl('/assets/images/bg-watch.png')) ?>')">
 
             <div class="collection-item__bg"></div>
 
@@ -136,7 +136,7 @@ $promotions = getPromotions();
 
         </a>
 
-        <a href="#products" class="collection-item" data-category="bag" style="--col-bg: url('<?= e(assetUrl('/assets/images/bg-bag.png')) ?>')">
+        <a href="#products" class="collection-item" data-category="bag" style="--col-bg: url('<?= e(themeImageUrl('/assets/images/bg-bag.png')) ?>')">
 
             <div class="collection-item__bg"></div>
 
@@ -162,7 +162,7 @@ $promotions = getPromotions();
 
         <div class="intro__visual reveal">
 
-            <div class="intro__image" style="background-image: url('<?= e(assetUrl('/assets/images/bg-intro.png')) ?>')"></div>
+            <div class="intro__image" style="background-image: url('<?= e(themeImageUrl('/assets/images/bg-intro.png')) ?>')"></div>
 
             <div class="intro__shade"></div>
 
@@ -336,7 +336,7 @@ $promotions = getPromotions();
 
                 <span class="editorial-card__num" aria-hidden="true"><?= e($card['num']) ?></span>
 
-                <div class="editorial-card__image" style="background-image: url('<?= e(assetUrl('/assets/images/' . $card['img'])) ?>')"></div>
+                <div class="editorial-card__image" style="background-image: url('<?= e(themeImageUrl('/assets/images/' . $card['img'])) ?>')"></div>
 
                 <div class="editorial-card__shade"></div>
 
@@ -378,7 +378,7 @@ $promotions = getPromotions();
 
 <section class="showcase">
 
-    <div class="showcase__bg" style="background-image: url('<?= e(assetUrl('/assets/images/bg-showcase.png')) ?>')" data-parallax="0.4"></div>
+    <div class="showcase__bg" style="background-image: url('<?= e(themeImageUrl('/assets/images/bg-showcase.png')) ?>')" data-parallax="0.4"></div>
 
     <div class="showcase__overlay"></div>
 
@@ -666,7 +666,7 @@ $promotions = getPromotions();
 
 <section class="valuation section" id="valuation">
 
-    <div class="valuation__parallax" style="background-image: url('<?= e(assetUrl('/assets/images/bg-valuation.png')) ?>')" data-parallax="0.25"></div>
+    <div class="valuation__parallax" style="background-image: url('<?= e(themeImageUrl('/assets/images/bg-valuation.png')) ?>')" data-parallax="0.25"></div>
 
     <div class="container">
 
