@@ -35,7 +35,7 @@ $compareRows = [
         <header class="designs-header">
             <a href="<?= e(siteUrl('/')) ?>" class="designs-header__back"><?= e(__('designs.back')) ?></a>
             <div class="designs-header__brand">
-                <img src="<?= e(assetUrl('/assets/images/logo-light.png')) ?>" alt="<?= e(siteMeta('name')) ?>" class="designs-header__logo-img" width="200" height="48">
+                <img src="<?= e(assetUrl('/assets/images/logo.png')) ?>" alt="<?= e(siteMeta('name')) ?>" class="designs-header__logo-img" width="200" height="48">
                 <span class="designs-header__sub"><?= e(__('designs.sub')) ?></span>
             </div>
             <div class="designs-header__actions">

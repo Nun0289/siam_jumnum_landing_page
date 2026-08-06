@@ -133,6 +133,9 @@ return [
 
     'aria.menu' => 'Open menu',
     'aria.call' => 'Call us',
+    'aria.line' => 'Chat on LINE',
+    'float.aria' => 'Quick contact',
+    'float.line' => 'Chat on LINE',
     'aria.prev' => 'Previous',
     'aria.next' => 'Next',
     'aria.lang' => 'Choose language',

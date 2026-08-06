@@ -86,13 +86,9 @@ body.theme-noir .logo--noir {
     justify-self: center;
 }
 
-body.theme-noir .logo--noir .logo__img--dark {
+body.theme-noir .logo--noir .logo__img {
     max-height: 42px;
     display: block;
-}
-
-body.theme-noir .logo--noir .logo__img--light {
-    display: none !important;
 }
 
 body.theme-noir .header.scrolled {
@@ -333,54 +329,83 @@ body.theme-noir .quote-section__text { color: var(--white); font-weight: 400; fo
 body.theme-noir .quote-section__ornament { color: var(--gold); font-size: 1.5rem; }
 body.theme-noir .quote-section__cite { color: var(--gold-light); }
 
-/* ===== SERVICES: แถบแนวนอน stacked ===== */
+/* ===== SERVICES: การ์ด Grid 3 คอลัมน์ ===== */
 body.theme-noir .services {
     background: var(--off-white);
     padding-bottom: clamp(60px, 10vw, 100px);
 }
 
 body.theme-noir .services__editorial {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(20px, 2.5vw, 28px);
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 clamp(20px, 4vw, 48px);
 }
 
 body.theme-noir .editorial-card {
-    display: grid;
-    grid-template-columns: 220px 1fr !important;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: unset !important;
     min-height: auto;
     border: 1px solid rgba(212, 175, 55, 0.25);
     background: var(--black);
+    overflow: hidden;
 }
 
 body.theme-noir .editorial-card--reverse { direction: ltr; }
 
-body.theme-noir .editorial-card__visual { min-height: 180px; }
+body.theme-noir .editorial-card__visual {
+    aspect-ratio: 4 / 5;
+    min-height: 240px;
+}
 
-body.theme-noir .editorial-card__image { min-height: 180px; }
+body.theme-noir .editorial-card__image { min-height: 100%; }
 
 body.theme-noir .editorial-card__content {
-    padding: 32px 40px;
+    padding: clamp(24px, 3vw, 32px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    flex: 1;
     background: var(--black);
 }
 
-body.theme-noir .editorial-card__cat { color: var(--gold); letter-spacing: 0.25em; }
+body.theme-noir .editorial-card__content::before {
+    left: clamp(24px, 3vw, 32px);
+    top: clamp(24px, 3vw, 32px);
+}
+
+body.theme-noir .editorial-card__cat {
+    color: var(--gold);
+    letter-spacing: 0.25em;
+    margin-bottom: 14px;
+}
 
 body.theme-noir .editorial-card__content h3 {
     color: var(--white);
     font-weight: 500;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-size: 1.125rem;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+    line-height: 1.35;
+    margin-bottom: 12px;
 }
 
-body.theme-noir .editorial-card__content p { color: var(--warm-gray); }
+body.theme-noir .editorial-card__content p {
+    color: var(--warm-gray);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+body.theme-noir .editorial-card__tags {
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+body.theme-noir .editorial-card__link { margin-top: auto; }
 
 body.theme-noir .text-link { color: var(--gold); }
 
@@ -547,7 +572,7 @@ body.theme-noir .footer::before {
 body.theme-noir .footer__links h4,
 body.theme-noir .footer__contact h4 { color: var(--gold); letter-spacing: 0.2em; }
 
-body.theme-noir .float-contact {
+body.theme-noir .float-bubble--phone {
     background: var(--gold);
     color: var(--black);
     font-weight: 500;
@@ -562,13 +587,17 @@ body.theme-noir .mobile-nav__link {
     font-size: 1.25rem;
 }
 
+@media (max-width: 1100px) {
+    body.theme-noir .services__editorial { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 900px) {
     body.theme-noir .header__bar--noir { grid-template-columns: 1fr auto; }
     body.theme-noir .nav--noir-left,
     body.theme-noir .nav--noir-right { display: none; }
     body.theme-noir .nav-toggle { display: flex; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); }
     body.theme-noir .logo--noir { grid-column: 1; justify-self: center; }
-    body.theme-noir .editorial-card { grid-template-columns: 1fr !important; }
+    body.theme-noir .services__editorial { grid-template-columns: 1fr; }
     body.theme-noir .steps { grid-template-columns: 1fr; }
     body.theme-noir .hero-slide__content { padding: 32px 24px; margin: 0 16px; }
 }

@@ -10,7 +10,7 @@
 
             </nav>
 
-            <?php $logoModifier = 'logo--noir'; $logoVariant = 'dark'; require __DIR__ . '/../partials/logo.php'; ?>
+            <?php $logoModifier = 'logo--noir'; require __DIR__ . '/../partials/logo.php'; ?>
 
             <nav class="nav nav--noir-right" id="navRight">
 

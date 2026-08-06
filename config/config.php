@@ -26,6 +26,7 @@ define('ADMIN_USER', $adminUser);
 define('ADMIN_PASS', $adminPass);
 
 define('PHONE', '085 200 1010');
+define('LINE_ID', '@siamjumnum');
 define('EMAIL', 'info@siamjumnum.com');
 define('HOURS', 'Mon - Sun 10:00 - 18:00');
 define('HOURS_TH', 'วันอาทิตย์ - วันศุกร์ 10:00 - 18:00 น.');

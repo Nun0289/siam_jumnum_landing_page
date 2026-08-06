@@ -133,6 +133,9 @@ return [
 
     'aria.menu' => '打开菜单',
     'aria.call' => '致电我们',
+    'aria.line' => 'LINE 咨询',
+    'float.aria' => '快速联系',
+    'float.line' => 'LINE 咨询',
     'aria.prev' => '上一页',
     'aria.next' => '下一页',
     'aria.lang' => '选择语言',

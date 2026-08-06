@@ -29,7 +29,7 @@ return [
     'collection.explore' => 'สำรวจ →',
 
     'intro.eyebrow' => 'Notre Maison',
-    'intro.title' => 'ศูนย์รับจำนำเพชรเม็ดใหญ่<br>และสินค้าแบรนด์เนม<br>ครบวงจร',
+    'intro.title' => 'ศูนย์รับจำนำเพชรเม็ดใหญ่<br>และสินค้าแบรนด์เนม ครบวงจร',
     'intro.lead' => 'รับจำนำเพชรเม็ดใหญ่ ให้ราคาสูงสุด · รับจำนำเพชรใบเซอร์ GIA, HRD, IGI · รับจำนำนาฬิกาแบรนด์เนม Patek Philippe, Rolex, Richard Mille, Panerai · รับจำนำกระเป๋าแบรนด์เนม Hermès, Chanel, Louis Vuitton, Gucci, Balenciaga, Dior',
     'intro.cta' => 'ประเมินราคาเบื้องต้น',
 
@@ -93,7 +93,7 @@ return [
     'category.other' => 'อื่นๆ',
 
     'steps.eyebrow' => 'วิธีการจำนำ',
-    'steps.title' => 'ขั้นตอนง่ายๆ<br>รับเงินสดทันที',
+    'steps.title' => 'ขั้นตอนง่ายๆ รับเงินสดทันที',
     'steps.1.title' => 'ติดต่อเรา',
     'steps.1.desc' => 'โทร {phone} หรือส่งรูปสินค้ามาประเมินเบื้องต้น',
     'steps.2.title' => 'ประเมินราคา',
@@ -102,7 +102,7 @@ return [
     'steps.3.desc' => 'ตกลงราคาแล้วรับเงินสดทันที สินค้าเก็บรักษาอย่างปลอดภัย',
 
     'valuation.eyebrow' => 'ประเมินราคา',
-    'valuation.title' => 'ส่งรูปสินค้ามา<br>ประเมินราคาเบื้องต้น<br>ได้เลย',
+    'valuation.title' => 'ส่งรูปสินค้ามา<br>ประเมินราคาเบื้องต้นได้เลย',
     'valuation.desc' => 'ให้เราประเมินราคาเบื้องต้นก่อนได้ค่ะ รับเงินสดทันที ให้ราคาสูง สยามจำนำใจดีเป็นกันเอง',
     'valuation.name' => 'ชื่อ-นามสกุล',
     'valuation.name_ph' => 'กรอกชื่อของคุณ',
@@ -133,6 +133,9 @@ return [
 
     'aria.menu' => 'เปิดเมนู',
     'aria.call' => 'โทรหาเรา',
+    'aria.line' => 'แชท LINE กับเรา',
+    'float.aria' => 'ติดต่อด่วน',
+    'float.line' => 'สอบถามทาง LINE',
     'aria.prev' => 'ก่อนหน้า',
     'aria.next' => 'ถัดไป',
     'aria.lang' => 'เลือกภาษา',

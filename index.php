@@ -686,13 +686,19 @@ $promotions = getPromotions();
 
         <div class="valuation__inner reveal">
 
-            <div class="valuation__text">
+            <div class="valuation__aside">
 
-                <span class="section-eyebrow"><?= e(__('valuation.eyebrow')) ?></span>
+                <div class="valuation__visual" style="background-image: url('<?= e(themeImageUrl('/assets/images/bg-valuation.png')) ?>')" aria-hidden="true"></div>
 
-                <h2 class="section-title"><?= __html('valuation.title') ?></h2>
+                <div class="valuation__text">
 
-                <p><?= e(__('valuation.desc')) ?></p>
+                    <span class="section-eyebrow"><?= e(__('valuation.eyebrow')) ?></span>
+
+                    <h2 class="section-title"><?= __html('valuation.title') ?></h2>
+
+                    <p><?= e(__('valuation.desc')) ?></p>
+
+                </div>
 
             </div>
 
