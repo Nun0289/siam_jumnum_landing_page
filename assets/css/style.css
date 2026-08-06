@@ -1345,7 +1345,13 @@ body.theme-blanc .preloader__logo .logo__img--light {
 
 .filter-btn.active::after { transform: scaleX(1); }
 
-.product-swiper { overflow: visible; padding-bottom: 20px; }
+.product-swiper {
+    overflow: visible;
+    padding-bottom: 20px;
+    /* ชิดซ้ายขึ้นเล็กน้อย โดยยังคง spaceBetween ของ Swiper */
+    margin-left: calc(-1 * clamp(10px, 2vw, 24px));
+    width: calc(100% + clamp(10px, 2vw, 24px));
+}
 
 .product-card { background: transparent; }
 
@@ -1442,6 +1448,8 @@ body.theme-blanc .preloader__logo .logo__img--light {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: clamp(16px, 2vw, 32px);
+    margin-left: calc(-1 * clamp(10px, 2vw, 24px));
+    width: calc(100% + clamp(10px, 2vw, 24px));
 }
 
 .product-grid__item { background: transparent; }

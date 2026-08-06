@@ -72,6 +72,8 @@ function initProductSwiper() {
     window.productSwiper = new Swiper('.product-swiper', {
         slidesPerView: 1.2,
         spaceBetween: 20,
+        centeredSlides: false,
+        slidesOffsetBefore: 0,
         navigation: { nextEl: '.product-next', prevEl: '.product-prev' },
         breakpoints: {
             640: { slidesPerView: 2.2, spaceBetween: 24 },
