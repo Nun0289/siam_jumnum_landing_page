@@ -480,11 +480,20 @@ body.theme-blanc .valuation__form {
 
 body.theme-blanc .form-group label { color: var(--warm-gray); }
 
-body.theme-blanc .form-group input,
-body.theme-blanc .form-group select,
-body.theme-blanc .form-group textarea {
+body.theme-blanc .valuation .form-group input,
+body.theme-blanc .valuation .form-group select,
+body.theme-blanc .valuation .form-group textarea {
     color: var(--black);
-    border-bottom-color: var(--light-gray);
+    background: var(--off-white);
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+}
+
+body.theme-blanc .valuation .form-group input:focus,
+body.theme-blanc .valuation .form-group select:focus,
+body.theme-blanc .valuation .form-group textarea:focus {
+    background: var(--white);
+    border-color: var(--gold);
 }
 
 body.theme-blanc .form-group input::placeholder,

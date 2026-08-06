@@ -471,6 +471,38 @@ body.theme-noir .valuation {
     border-bottom: 3px double var(--gold);
 }
 
+body.theme-noir .valuation__form {
+    background: var(--white);
+    border-color: rgba(212, 175, 55, 0.35);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+body.theme-noir .valuation .form-group label { color: var(--warm-gray); }
+
+body.theme-noir .valuation .form-group input,
+body.theme-noir .valuation .form-group select,
+body.theme-noir .valuation .form-group textarea {
+    background: var(--off-white);
+    border-color: var(--light-gray);
+    color: var(--black);
+}
+
+body.theme-noir .valuation .form-group input:focus,
+body.theme-noir .valuation .form-group select:focus,
+body.theme-noir .valuation .form-group textarea:focus {
+    background: var(--white);
+    border-color: var(--gold);
+}
+
+body.theme-noir .valuation .form-note { color: var(--warm-gray); }
+body.theme-noir .valuation .form-note a { color: var(--gold-dark); }
+
+body.theme-noir .valuation .btn--gold {
+    background: var(--black);
+    border-color: var(--black);
+    color: var(--white);
+}
+
 body.theme-noir .btn--gold {
     background: transparent;
     border: 1px solid var(--gold);
@@ -478,12 +510,16 @@ body.theme-noir .btn--gold {
     letter-spacing: 0.25em;
 }
 
+body.theme-noir .valuation .btn--gold:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--white);
+}
+
 body.theme-noir .btn--gold:hover {
     background: var(--gold);
     color: var(--black);
 }
-
-body.theme-noir .valuation .btn--gold:hover { color: var(--black); }
 
 /* ===== PROMOTIONS ===== */
 body.theme-noir .promotions { background: var(--off-white); }

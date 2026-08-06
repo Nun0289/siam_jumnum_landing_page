@@ -136,6 +136,7 @@ return [
     'aria.prev' => 'Previous',
     'aria.next' => 'Next',
     'aria.lang' => 'Choose language',
+    'brands.aria' => 'Brands we accept',
 
     'blanc.tagline' => 'SIAM JUMNUM · Bangkok',
 

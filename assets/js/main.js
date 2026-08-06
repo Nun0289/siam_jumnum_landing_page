@@ -70,15 +70,16 @@ function initHeroSwiper() {
 
 function initProductSwiper() {
     window.productSwiper = new Swiper('.product-swiper', {
-        slidesPerView: 1.2,
-        spaceBetween: 20,
+        slidesPerView: 1.15,
+        spaceBetween: 12,
         centeredSlides: false,
         slidesOffsetBefore: 0,
         navigation: { nextEl: '.product-next', prevEl: '.product-prev' },
         breakpoints: {
-            640: { slidesPerView: 2.2, spaceBetween: 24 },
-            1024: { slidesPerView: 3.2, spaceBetween: 32 },
-            1280: { slidesPerView: 4, spaceBetween: 32 },
+            640: { slidesPerView: 2.4, spaceBetween: 16 },
+            1024: { slidesPerView: 3.6, spaceBetween: 20 },
+            1280: { slidesPerView: 4.5, spaceBetween: 20 },
+            1600: { slidesPerView: 5.2, spaceBetween: 24 },
         },
     });
 }

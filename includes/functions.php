@@ -238,3 +238,20 @@ function assetUrl(string $path): string {
     $version = file_exists($fullPath) ? (string) filemtime($fullPath) : (string) time();
     return $path . '?v=' . $version;
 }
+
+function getBrandMarqueeItems(): array {
+    return [
+        ['name' => 'Rolex', 'logo' => '/assets/images/brands/rolex.svg'],
+        ['name' => 'Patek Philippe', 'logo' => '/assets/images/brands/patek-philippe.svg'],
+        ['name' => 'Richard Mille', 'logo' => '/assets/images/brands/richard-mille.svg'],
+        ['name' => 'Hermès', 'logo' => '/assets/images/brands/hermes.svg'],
+        ['name' => 'Chanel', 'logo' => '/assets/images/brands/chanel.svg'],
+        ['name' => 'Louis Vuitton', 'logo' => '/assets/images/brands/louis-vuitton.svg'],
+        ['name' => 'Gucci', 'logo' => '/assets/images/brands/gucci.svg'],
+        ['name' => 'Dior', 'logo' => '/assets/images/brands/dior.svg'],
+        ['name' => 'GIA', 'logo' => '/assets/images/brands/gia.svg'],
+        ['name' => 'HRD', 'logo' => '/assets/images/brands/hrd.svg'],
+        ['name' => 'IGI', 'logo' => '/assets/images/brands/igi.svg'],
+        ['name' => 'Panerai', 'logo' => '/assets/images/brands/panerai.svg'],
+    ];
+}

@@ -136,6 +136,7 @@ return [
     'aria.prev' => '上一页',
     'aria.next' => '下一页',
     'aria.lang' => '选择语言',
+    'brands.aria' => '我们接受的品牌',
 
     'blanc.tagline' => 'SIAM JUMNUM · Bangkok',
 

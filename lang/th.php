@@ -51,7 +51,7 @@ return [
     'quote.cite' => '— สยามจำนำ',
 
     'services.eyebrow' => 'Nos Services',
-    'services.title' => 'ค้นพบบริการ<br>ของเรา',
+    'services.title' => 'ค้นพบบริการของเรา',
     'services.diamond.title' => 'รับจำนำเพชร',
     'services.diamond.desc' => 'เพชรเม็ดใหญ่ · เพชรใบเซอร์ GIA, HRD, IGI',
     'services.watch.title' => 'รับจำนำนาฬิกา',
@@ -81,7 +81,7 @@ return [
     'showcase.stat3.label' => 'จ่ายเงินสดทันที',
 
     'products.eyebrow' => 'Nos Icônes',
-    'products.title' => 'สินค้าแบรนด์เนม<br>ที่เรารับจำนำ',
+    'products.title' => 'สินค้าแบรนด์เนมที่เรารับจำนำ',
     'products.grid_eyebrow' => 'รายการสินค้า',
     'products.grid_title' => 'สินค้าที่เรารับจำนำ',
     'products.evaluate' => 'ประเมินราคา',
@@ -136,6 +136,7 @@ return [
     'aria.prev' => 'ก่อนหน้า',
     'aria.next' => 'ถัดไป',
     'aria.lang' => 'เลือกภาษา',
+    'brands.aria' => 'แบรนด์ที่เรารับจำนำ',
 
     'blanc.tagline' => 'SIAM JUMNUM · Bangkok',
 

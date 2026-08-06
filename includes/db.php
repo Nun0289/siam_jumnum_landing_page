@@ -22,7 +22,7 @@ function getDefaultData(): array {
     return [
         'banners' => [
             ['id' => 1, 'title' => 'สยามจำนำ', 'subtitle' => 'รับซื้อ · ขายฝาก เพชร ทอง นาฬิกา สินค้าแบรนด์เนม', 'image_url' => '/assets/images/banner-store-collage.png', 'banner_style' => 'store', 'link_url' => '#contact', 'sort_order' => 1, 'is_active' => 1],
-            ['id' => 2, 'title' => 'ห้างทองเพชร เยาวราช', 'subtitle' => 'ศูนย์รับจำนำเพชรเม็ดใหญ่ และสินค้าแบรนด์เนม ครบวงจร', 'image_url' => '/assets/images/banner-store-hero.png', 'banner_style' => 'store', 'link_url' => '#about', 'sort_order' => 2, 'is_active' => 1],
+            ['id' => 2, 'title' => 'ห้างทองเพชร เยาวราช', 'subtitle' => 'ศูนย์รับจำนำเพชรเม็ดใหญ่ และสินค้าแบรนด์เนม ครบวงจร', 'image_url' => '/assets/images/banner-store-hero.png', 'banner_style' => 'store', 'link_url' => '#about', 'sort_order' => 2, 'is_active' => 0],
             ['id' => 3, 'title' => 'รับจำนำเพชรใบเซอร์', 'subtitle' => 'GIA · HRD · IGI — ให้ราคาสูง จ่ายเงินสดทันที', 'image_url' => '/assets/images/bg-diamond.png', 'banner_style' => 'product', 'link_url' => '#products', 'sort_order' => 3, 'is_active' => 1],
             ['id' => 4, 'title' => 'รับจำนำนาฬิกาแบรนด์เนม', 'subtitle' => 'Rolex · Patek Philippe · Richard Mille · Panerai', 'image_url' => '/assets/images/bg-watch.png', 'banner_style' => 'product', 'link_url' => '#products', 'sort_order' => 4, 'is_active' => 1],
             ['id' => 5, 'title' => 'เยี่ยมชมสาขาของเรา', 'subtitle' => 'สยามจำนำ · ใจกลางเยาวราช กรุงเทพฯ', 'image_url' => '/assets/images/banner-storefront.png', 'banner_style' => 'store', 'link_url' => '#contact', 'sort_order' => 5, 'is_active' => 1],

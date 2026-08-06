@@ -476,7 +476,15 @@ $promotions = getPromotions();
 
 
 
-        <div class="swiper product-swiper reveal">
+    </div>
+
+
+
+    <div class="products__carousel reveal">
+
+
+
+        <div class="swiper product-swiper">
 
             <div class="swiper-wrapper">
 
@@ -518,7 +526,13 @@ $promotions = getPromotions();
 
             </div>
 
-            <div class="product-nav">
+
+
+        </div>
+
+
+
+        <div class="product-nav">
 
                 <button class="product-prev" aria-label="<?= e(__('aria.prev')) ?>"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M15 18l-6-6 6-6"/></svg></button>
 
@@ -527,8 +541,6 @@ $promotions = getPromotions();
             </div>
 
         </div>
-
-    </div>
 
 </section>
 
@@ -547,6 +559,10 @@ $promotions = getPromotions();
             <h2 class="section-title"><?= e(__('products.grid_title')) ?></h2>
 
         </div>
+
+    </div>
+
+    <div class="product-grid-outer">
 
         <div class="product-grid" id="productGrid">
 
@@ -589,8 +605,6 @@ $promotions = getPromotions();
     </div>
 
 </section>
-
-
 
 <!-- How It Works -->
 
@@ -796,23 +810,7 @@ $promotions = getPromotions();
 
 <!-- Brands Marquee -->
 
-<section class="brands">
-
-    <div class="brands__track">
-
-        <span>Rolex</span><span>Patek Philippe</span><span>Richard Mille</span><span>Hermès</span>
-
-        <span>Chanel</span><span>Louis Vuitton</span><span>Gucci</span><span>Dior</span>
-
-        <span>GIA</span><span>HRD</span><span>IGI</span><span>Panerai</span>
-
-        <span>Rolex</span><span>Patek Philippe</span><span>Richard Mille</span><span>Hermès</span>
-
-        <span>Chanel</span><span>Louis Vuitton</span><span>Gucci</span><span>Dior</span>
-
-    </div>
-
-</section>
+<?php require __DIR__ . '/includes/partials/brands-marquee.php'; ?>
 
 
 
