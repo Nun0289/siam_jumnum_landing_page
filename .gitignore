@@ -1,0 +1,7 @@
+uploads/*
+!uploads/.gitkeep
+database/*.db
+config/config.local.php
+/release.zip
+/deploy-run.php
+.release/

@@ -1,0 +1,48 @@
+/* Theme 1: Maison Classic — Chaumet editorial (default layout) */
+
+body.theme-classic {
+    --black: #080808;
+    --white: #ffffff;
+    --off-white: #f9f7f4;
+    --warm-gray: #7a756f;
+    --light-gray: #e8e4de;
+    --gold: #c4a265;
+    --gold-light: #dcc99a;
+    --gold-dark: #9a7b42;
+    --font-serif: 'Prompt', sans-serif;
+    --font-sans: 'Prompt', sans-serif;
+}
+
+body.theme-classic .grain { opacity: 0.035; }
+
+body.theme-classic .hero-slide__content {
+    text-align: center;
+    padding-bottom: clamp(120px, 15vh, 180px);
+}
+
+body.theme-classic .collections-strip { background: var(--black); }
+
+body.theme-classic .intro__shade {
+    background: linear-gradient(135deg, rgba(0,0,0,0.12) 0%, transparent 60%);
+}
+
+body.theme-classic .intro__visual {
+    box-shadow: 0 16px 48px rgba(0,0,0,0.08);
+}
+
+body.theme-classic .quote-section { background: var(--white); }
+
+body.theme-classic .stats-strip { background: var(--black); }
+
+/* Classic keeps: carousel products + product grid both visible */
+body.theme-classic .products .product-swiper { display: block; }
+body.theme-classic .product-grid-section { display: block; }
+
+/* Luxury bg — champagne gold ambient */
+body.theme-classic {
+    --lux-orb-1: rgba(196, 162, 101, 0.08);
+    --lux-orb-2: rgba(196, 162, 101, 0.05);
+    --lux-orb-3: rgba(220, 201, 154, 0.07);
+    --lux-pattern: rgba(196, 162, 101, 0.05);
+    --lux-line: rgba(196, 162, 101, 0.15);
+}

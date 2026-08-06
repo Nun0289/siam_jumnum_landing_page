@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Block direct access to config and includes
+RewriteRule ^config/ - [F,L]
+RewriteRule ^includes/ - [F,L]
+RewriteRule ^database/ - [F,L]
+
+# Serve static files directly
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+DirectoryIndex index.php
+
+# Optional: force HTTPS on production
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^saimjumnum\.charoencodegroup\.com$ [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
