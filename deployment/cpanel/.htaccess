@@ -13,5 +13,5 @@ DirectoryIndex index.php
 
 # Optional: force HTTPS on production
 RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP_HOST} ^saimjumnum\.charoencodegroup\.com$ [NC]
+RewriteCond %{HTTP_HOST} ^siamjumnum\.charoencodegroup\.com$ [NC]
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

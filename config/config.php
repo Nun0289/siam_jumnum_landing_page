@@ -7,7 +7,7 @@ if (!empty($_SERVER['HTTP_HOST'])) {
     $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
     define('SITE_URL', $scheme . '://' . $_SERVER['HTTP_HOST']);
 } else {
-    define('SITE_URL', 'https://saimjumnum.charoencodegroup.com');
+    define('SITE_URL', 'https://siamjumnum.charoencodegroup.com');
 }
 
 define('DB_PATH', BASE_PATH . '/database/siam_jumnum.db');

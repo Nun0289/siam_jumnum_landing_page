@@ -2,10 +2,10 @@
 
 ## Production URL
 
-- **Site:** https://saimjumnum.charoencodegroup.com
-- **Admin:** https://saimjumnum.charoencodegroup.com/admin/
+- **Site:** https://siamjumnum.charoencodegroup.com
+- **Admin:** https://siamjumnum.charoencodegroup.com/admin/
 - **cPanel user / FTP:** `zksqpszw` (same as [megawash](https://megawash.charoencodegroup.com))
-- **Web root:** `/home/zksqpszw/public_html/saimjumnum.charoencodegroup.com`
+- **Web root:** `/home/zksqpszw/public_html/siamjumnum.charoencodegroup.com`
 
 ## Requirements
 
@@ -39,11 +39,11 @@ Push to `main` → workflow deploy อัตโนมัติ
 1. cPanel → **MultiPHP** → subdomain → PHP 8.3
 2. สร้าง/แก้ `config/config.local.php` บนเซิร์ฟเวอร์ — เปลี่ยนรหัส admin
 3. เปิด Force HTTPS + AutoSSL สำหรับ subdomain
-4. ทดสอบ https://saimjumnum.charoencodegroup.com และ `/admin/`
+4. ทดสอบ https://siamjumnum.charoencodegroup.com และ `/admin/`
 
 ## Checklist
 
-- [ ] Subdomain `saimjumnum.charoencodegroup.com` ชี้ไป `public_html/saimjumnum.charoencodegroup.com`
+- [ ] Subdomain `siamjumnum.charoencodegroup.com` ชี้ไป `public_html/siamjumnum.charoencodegroup.com`
 - [ ] FTP secrets ตั้งใน GitHub (หรือรัน script local)
 - [ ] เปลี่ยนรหัส admin ใน `config.local.php`
 - [ ] เว็บโหลดได้ + รูป/แบนเนอร์ครบ

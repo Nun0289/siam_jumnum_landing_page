@@ -3,8 +3,8 @@ param(
     [string]$FtpUser = $env:FTP_USER,
     [string]$FtpPassword = $env:FTP_PASSWORD,
     [string]$DeployToken = $env:DEPLOY_TOKEN,
-    [string]$WebRoot = "public_html/saimjumnum.charoencodegroup.com",
-    [string]$SiteUrl = "https://saimjumnum.charoencodegroup.com"
+    [string]$WebRoot = "public_html/siamjumnum.charoencodegroup.com",
+    [string]$SiteUrl = "https://siamjumnum.charoencodegroup.com"
 )
 
 $ErrorActionPreference = "Stop"

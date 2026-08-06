@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: deploy-saimjumnum-cpanel
+  group: deploy-siamjumnum-cpanel
   cancel-in-progress: true
 
 jobs:
@@ -72,9 +72,9 @@ jobs:
             set net:max-retries 5;
             set xfer:clobber on;
             open -u '${FTP_USER}','${FTP_PASSWORD}' ${FTP_HOST};
-            mkdir -f -p public_html/saimjumnum.charoencodegroup.com;
-            put -O public_html/saimjumnum.charoencodegroup.com release.zip;
-            put -O public_html/saimjumnum.charoencodegroup.com deploy-run.php;
+            mkdir -f -p public_html/siamjumnum.charoencodegroup.com;
+            put -O public_html/siamjumnum.charoencodegroup.com release.zip;
+            put -O public_html/siamjumnum.charoencodegroup.com deploy-run.php;
             bye
           "
 
@@ -83,7 +83,7 @@ jobs:
           DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: |
           set -euo pipefail
-          url="https://saimjumnum.charoencodegroup.com/deploy-run.php"
+          url="https://siamjumnum.charoencodegroup.com/deploy-run.php"
           for i in 1 2 3 4 5; do
             body="$(mktemp)"
             code="$(curl -sS -o "$body" -w "%{http_code}" --max-time 300 \
