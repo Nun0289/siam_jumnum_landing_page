@@ -56,9 +56,23 @@ function getTheme(string $id): array
 function resolveTheme(?string $id = null): array
 {
     $allowed = array_keys(getThemes());
-    $id = $id ?? ($_GET['theme'] ?? 'classic');
-    if (!in_array($id, $allowed, true)) {
-        $id = 'classic';
+
+    if ($id !== null && in_array($id, $allowed, true)) {
+        $_SESSION['theme'] = $id;
+    } elseif (isset($_GET['theme']) && in_array($_GET['theme'], $allowed, true)) {
+        $_SESSION['theme'] = $_GET['theme'];
     }
-    return getTheme($id);
+
+    $resolved = $_SESSION['theme'] ?? 'classic';
+    if (!in_array($resolved, $allowed, true)) {
+        $resolved = 'classic';
+    }
+
+    $GLOBALS['current_theme_id'] = $resolved;
+    return getTheme($resolved);
+}
+
+function currentThemeId(): string
+{
+    return $GLOBALS['current_theme_id'] ?? resolveTheme()['id'];
 }

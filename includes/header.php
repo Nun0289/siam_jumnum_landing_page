@@ -62,41 +62,17 @@ $lang = currentLang();
 
     <div class="grain" aria-hidden="true"></div>
 
-    <?php if (isset($_GET['theme'])): ?>
-
     <nav class="theme-switcher" aria-label="Design switcher">
 
         <?php foreach (getThemes() as $t): ?>
 
-        <?php
-
-            $params = $_GET;
-
-            $params['theme'] = $t['id'];
-
-            if ($lang !== 'th') {
-
-                $params['lang'] = $lang;
-
-            } else {
-
-                unset($params['lang']);
-
-            }
-
-            $themeHref = '/?' . http_build_query($params);
-
-        ?>
-
-        <a href="<?= e($themeHref) ?>" class="theme-switcher__btn <?= $theme['id'] === $t['id'] ? 'active' : '' ?>"><?= e($t['name']) ?></a>
+        <a href="<?= e(siteUrl('/', ['theme' => $t['id']])) ?>" class="theme-switcher__btn <?= $theme['id'] === $t['id'] ? 'active' : '' ?>"><?= e($t['name']) ?></a>
 
         <?php endforeach; ?>
 
-        <a href="/designs.php?lang=<?= e($lang) ?>" class="theme-switcher__all">Designs</a>
+        <a href="<?= e(siteUrl('/designs.php')) ?>" class="theme-switcher__all">Designs</a>
 
     </nav>
-
-    <?php endif; ?>
 
     <div class="preloader" id="preloader">
 

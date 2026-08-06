@@ -66,6 +66,9 @@ function langUrl(string $lang): string
 {
     $params = $_GET;
     $params['lang'] = $lang;
+    if (!isset($params['theme']) && !empty($_SESSION['theme'])) {
+        $params['theme'] = $_SESSION['theme'];
+    }
     $query = http_build_query($params);
     $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
     return $path . ($query ? '?' . $query : '');
@@ -74,6 +77,9 @@ function langUrl(string $lang): string
 function siteUrl(string $path = '/', array $params = []): string
 {
     $params = array_merge($_GET, $params);
+    if (!isset($params['theme']) && !empty($_SESSION['theme'])) {
+        $params['theme'] = $_SESSION['theme'];
+    }
     $lang = currentLang();
     if ($lang !== 'th') {
         $params['lang'] = $lang;
